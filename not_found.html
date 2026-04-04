@@ -33,7 +33,8 @@
             } catch (e) { }
         })();
     </script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" />
     <style>
         :root {
             /* Colors - Light Mode */
@@ -241,14 +242,14 @@
             align-items: center;
             justify-content: center;
             transition: all var(--transition-fast);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
 
         .help-btn:hover {
             background: var(--color-bg-hover);
             border-color: var(--color-accent-primary);
             transform: translateY(-1px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .help-btn.active {
@@ -320,8 +321,12 @@
                 incorrect.</p>
         </div>
 
+        <!-- Button styles:
+             .btn.primary   = Focused / filled (accent background, white text)
+             .btn.secondary = Not focused / outline (transparent background, border) -->
         <div class="actions">
             <a class="btn primary" href="index.html">Back to editor</a>
+            <a class="btn secondary" href="javascript:history.back()">Go back</a>
         </div>
 
         <div class="help-container">
@@ -330,7 +335,9 @@
             </button>
             <div class="help-flyout" id="helpFlyout" role="region">
                 <h3>What is a 404 error?</h3>
-                <p>A <strong>404 Not Found</strong> error means the server was reached, but the specific page you asked for does not exist. This often happens when a link is outdated, or the address was typed incorrectly.</p>
+                <p>A <strong>404 Not Found</strong> error means the server was reached, but the specific page you asked
+                    for does not exist. This often happens when a link is outdated, or the address was typed
+                    incorrectly.</p>
             </div>
         </div>
     </main>
